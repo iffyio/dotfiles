@@ -137,3 +137,6 @@ ex ()
 pwr () {
   echo `sudo iwconfig wlo1 power off; iwconfig | grep "Power Management"`
 }
+
+export DEBFULLNAME="Ifeanyi Ubah"
+export DEBEMAIL="ifeanyiub@gmail.com"
