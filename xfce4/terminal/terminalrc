@@ -22,4 +22,6 @@ ScrollingOnOutput=FALSE
 DropdownKeepOpenDefault=TRUE
 FontName=Monospace 10
 DropdownHeight=42
+ShortcutsNoMnemonics=TRUE
+ShortcutsNoMenukey=TRUE
 
