@@ -1,3 +1,5 @@
+set -o vi
+
 
 HISTCONTROL=ignoreboth
 
@@ -111,3 +113,7 @@ pwr () {
 }
 
 export GOPATH=/home/iffy/Documents/go
+export EDITOR=vi
+
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
