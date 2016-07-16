@@ -3,6 +3,12 @@ colorscheme monokai
 set clipboard=unnamedplus
 set autoindent
 set number
+set ignorecase
+set smartcase
+"set nowrap
+
+set nobackup
+set noswapfile
 
 " background color on visual mode for monokai theme in terminal
 hi Visual term=reverse cterm=reverse guibg=Green
