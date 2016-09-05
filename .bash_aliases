@@ -10,11 +10,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias gs='git status'
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit'
-alias gd='git diff'
-alias gco='git checkout '
+#alias gs='git status'
+#alias ga='git add '
+#alias gb='git branch '
+#alias gc='git commit'
+#alias gd='git diff'
+#alias gco='git checkout '
 
+alias as="as --32"
+alias ld="ld -m elf_i386"
 

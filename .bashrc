@@ -1,5 +1,3 @@
-set -o vi
-
 
 HISTCONTROL=ignoreboth
 
@@ -35,16 +33,19 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-		PS1='\[\033[01;32m\][\[\033[01;37m\]\W\[\033[01;32m\]]\$\[\033[00m\] '
+		#PS1='\[\033[01;32m\][\[\033[01;37m\]\W\[\033[01;32m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;37m\]\W\[\033[01;32m\] \$\[\033[00m\] '
 else
-		PS1='\[\033[01;32m\][\[\033[01;37m\]\W\[\033[01;32m\]]\$\[\033[00m\] '
+		#PS1='\[\033[01;32m\]\[\033[01;37m\]\W\[\033[01;32m\] \$\[\033[00m\] '
+		PS1='\[\033[01;37m\]\W\[\033[01;32m\] \$\[\033[00m\] '
 fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;\W\a\]$PS1"
     ;;
 *)
     ;;
@@ -107,13 +108,14 @@ ex ()
   fi
 }
 
-# disable power management
-pwr () {
-  echo `sudo iwconfig wlo1 power off; iwconfig | grep "Power Management"`
-}
+alias doc="cd ~/Documents"
+alias dow="cd ~/Downloads"
 
-export GOPATH=/home/iffy/Documents/go
 export EDITOR=vi
-
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+export LFS="/mnt/lfs"
+export HADOOP_HOME="/home/iffy/Documents/id2221/hadoop-2.6.4"
+export HADOOP_CONFIG="$HADOOP_HOME/etc/hadoop"
+export JAVA_HOME="/usr/lib/jvm/oracle_jdk8"
+alias dfs="$HADOOP_HOME/bin/hdfs dfs "
+alias hdfs="$HADOOP_HOME/bin/hdfs "
+alias hadoop="$HADOOP_HOME/bin/hadoop "

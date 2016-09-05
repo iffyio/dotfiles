@@ -17,11 +17,14 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 ScrollingLines=999999
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0.920000
+BackgroundDarkness=0,800000
 ScrollingOnOutput=FALSE
 DropdownKeepOpenDefault=TRUE
 FontName=Monospace 10
-DropdownHeight=42
 ShortcutsNoMnemonics=TRUE
 ShortcutsNoMenukey=TRUE
+MiscScrollAlternateScreen=TRUE
+ColorCursor=#868681818181
+DropdownHeight=37
+DropdownStatusIcon=FALSE
 
