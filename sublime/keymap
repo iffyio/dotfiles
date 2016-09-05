@@ -1,1 +1,20 @@
-/home/iffy/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
+[
+  
+  { "keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 1.0 } },
+  { "keys": ["ctrl+e"], "command": "scroll_lines", "args": {"amount": -1.0 } },
+  { "keys": ["ctrl+y"], "command": "move", "args": {"by": "pages", "forward": false} },
+  { "keys": ["ctrl+f"], "command": "move", "args": {"by": "pages", "forward": true} },
+
+
+  { "keys": ["ctrl+tab"], "command": "next_view" },
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+
+  { "keys": ["/"], "command": "show_panel", "args": {"panel": "find", "reverse": false},
+    "context": [{"key": "vi_command_mode_aware"}] },
+
+
+  { "keys": ["alt+shift+k"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+shift+j"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["ctrl+r"], "command": "redo" }
+]
