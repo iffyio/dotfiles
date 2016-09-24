@@ -16,5 +16,8 @@
 
   { "keys": ["alt+shift+k"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+shift+j"], "command": "select_lines", "args": {"forward": true} },
-  { "keys": ["ctrl+r"], "command": "redo" }
+  { "keys": ["ctrl+r"], "command": "redo" },
+
+  { "keys": ["shift+alt+f"], "command": "toggle_full_screen" },
+  { "keys": ["alt+f"], "command": "toggle_distraction_free" },
 ]
