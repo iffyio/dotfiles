@@ -108,6 +108,11 @@ ex ()
   fi
 }
 
+if [ -d "$HOME/bin" ];
+then
+	export PATH=~/bin:$PATH
+fi
+
 alias doc="cd ~/Documents"
 alias dow="cd ~/Downloads"
 
@@ -119,3 +124,5 @@ export JAVA_HOME="/usr/lib/jvm/oracle_jdk8"
 alias dfs="$HADOOP_HOME/bin/hdfs dfs "
 alias hdfs="$HADOOP_HOME/bin/hdfs "
 alias hadoop="$HADOOP_HOME/bin/hadoop "
+
+export GOPATH=$HOME/Documents/go
