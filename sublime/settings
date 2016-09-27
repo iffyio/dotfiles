@@ -4,7 +4,7 @@
 	[
 		"Vintage"
 	],
+	"show_definitions": false,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-  "show_definitions": false,
+	"translate_tabs_to_spaces": true
 }
