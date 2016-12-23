@@ -17,7 +17,7 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 ScrollingLines=999999
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0,800000
+BackgroundDarkness=0.970000
 ScrollingOnOutput=FALSE
 DropdownKeepOpenDefault=TRUE
 FontName=Monospace 10
@@ -27,4 +27,7 @@ MiscScrollAlternateScreen=TRUE
 ColorCursor=#868681818181
 DropdownHeight=37
 DropdownStatusIcon=FALSE
+ColorPalette=#000000000000;#aaaa00000000;#0000aaaa0000;#aaaa55550000;#00000000aaaa;#aaaa0000aaaa;#0000aaaaaaaa;#aaaaaaaaaaaa;#555555555555;#ffff55555555;#5555ffff5555;#eaeab0b05e5e;#55555555ffff;#ffff5555ffff;#5555ffffffff;#ffffffffffff
+ColorBackground=#272728282222
+ColorForeground=#1e27eddd4b3e
 
