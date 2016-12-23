@@ -1,4 +1,6 @@
 {
+	"caret_style": "solid",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
