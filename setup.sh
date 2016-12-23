@@ -2,13 +2,7 @@
 
 backup_folder="$(readlink -m backup)"
 
-#echo "backup folder at $backup_folder"
-
-create_backup_folder () {
-	if [ ! -d "$backup_folder" ]; then
-		mkdir "$backup_folder"
-	fi
-}
+mkdir -p "$backup_folder"
 
 confirm_create_link () {
 	file_path="$1"
