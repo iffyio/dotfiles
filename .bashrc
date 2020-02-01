@@ -87,7 +87,5 @@ fi
 # exports
 export EDITOR=vi
 export JAVA_HOME="/usr/lib/jvm/oracle_jdk8"
-export GOPATH="$HOME/Documents/go"
 export doc="$HOME/Documents"
 export dow="$HOME/Downloads"
-export dropbox="$HOME/Dropbox"
