@@ -49,39 +49,34 @@ create_soft_link () {
 }
 
 make_bash_links () {
-	#echo "making bash links"
 	create_soft_link ".bash_aliases" "$HOME/.bash_aliases"
 	create_soft_link ".bashrc" "$HOME/.bashrc"
 }
 
 make_vim_links () {
-	#echo "making vim links"
 	create_soft_link ".vimrc" "$HOME/.vimrc"
 	create_soft_link ".vim" "$HOME/.vim"
 }
 
-make_xfce_links () {
-	#echo "making xfce links"
-	create_soft_link "xfce4/terminal" "$HOME/.config/xfce4/terminal"
-}
-
 make_Xmodmap_link () {
-	#echo "making Xmodmap link"
 	create_soft_link ".Xmodmap" "$HOME/.Xmodmap"
 }
 
 make_git_link () {
-	#echo "making git link"
 	create_soft_link ".gitconfig" "$HOME/.gitconfig"
+}
+
+make_tmux_link () {
+	create_soft_link ".tmux.conf" "$HOME/.tmux.conf"
 }
 
 make_links () {
 	create_backup_folder
 	make_bash_links
 	make_vim_links
-	make_xfce_links
 	make_Xmodmap_link
 	make_git_link
+	make_tmux_link
 }
 
 make_links
