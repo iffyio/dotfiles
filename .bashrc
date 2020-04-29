@@ -19,7 +19,7 @@ esac
 
 
 PS1='\[\033[01;37m\]\W\[\033[01;32m\] \$\[\033[00m\] '
-
+PROMPT_COMMAND='echo -en "\033]0; $(basename `pwd`)\a"'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -86,6 +86,6 @@ fi
 
 # exports
 export EDITOR=vi
-export JAVA_HOME="/usr/lib/jvm/oracle_jdk8"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export doc="$HOME/Documents"
 export dow="$HOME/Downloads"

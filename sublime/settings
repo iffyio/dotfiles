@@ -1,6 +1,5 @@
 {
 	"caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -34,10 +33,7 @@
 		"target"
 	],
 	"font_size": 10,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+	"ignored_packages": [],
 	"show_definitions": false,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true
